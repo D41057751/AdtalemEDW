@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Budget Subject Area.erd" time="201811051102">
+	<entities>
+		<data-source id="snowflake_jdbc-166e406b32e-321ebf9e8ab94e1f">
+			<entity id="1" name="DIM_ACCOUNT" fq-name="ATGE_EDW.EDW.DIM_ACCOUNT" order="0" x="421" y="102">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+			<entity id="2" name="DIM_BUDGET_TYPE" fq-name="ATGE_EDW.EDW.DIM_BUDGET_TYPE" order="1" x="306" y="301">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+			<entity id="3" name="DIM_DATE" fq-name="ATGE_EDW.EDW.DIM_DATE" order="2" x="926" y="91">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+			<entity id="4" name="DIM_INSTITUTION" fq-name="ATGE_EDW.EDW.DIM_INSTITUTION" order="3" x="344" y="575">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+			<entity id="5" name="DIM_LINE_ITEM_TYPE" fq-name="ATGE_EDW.EDW.DIM_LINE_ITEM_TYPE" order="4" x="916" y="577">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+			<entity id="6" name="DIM_SOURCE_SYSTEM" fq-name="ATGE_EDW.EDW.DIM_SOURCE_SYSTEM" order="5" x="1003" y="350">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+			<entity id="7" name="FACT_BUDGET" fq-name="ATGE_EDW.EDW.FACT_BUDGET" order="6" x="618" y="258">
+				<path name="EDW"/>
+				<path name="ATGE_EDW"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="SYS_CONSTRAINT_75ecbc2d-a7ec-45d9-92d4-69292c245e24" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_75ecbc2d-a7ec-45d9-92d4-69292c245e24&quot;" type="fk" pk-ref="1" fk-ref="7"/>
+		<relation name="SYS_CONSTRAINT_95bc0da5-8d9a-4a1f-bcf8-4949aed1c4bd" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_95bc0da5-8d9a-4a1f-bcf8-4949aed1c4bd&quot;" type="fk" pk-ref="2" fk-ref="7"/>
+		<relation name="SYS_CONSTRAINT_1b76720e-17c8-40b7-9cbb-21c5e070aa56" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_1b76720e-17c8-40b7-9cbb-21c5e070aa56&quot;" type="fk" pk-ref="3" fk-ref="7"/>
+		<relation name="SYS_CONSTRAINT_6cc1d1f7-55f4-42ae-9512-18c37bfe2e26" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_6cc1d1f7-55f4-42ae-9512-18c37bfe2e26&quot;" type="fk" pk-ref="3" fk-ref="7"/>
+		<relation name="SYS_CONSTRAINT_7de90fdf-b8ff-4c4b-b6ef-cb5ae9a6aefe" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_7de90fdf-b8ff-4c4b-b6ef-cb5ae9a6aefe&quot;" type="fk" pk-ref="4" fk-ref="7"/>
+		<relation name="SYS_CONSTRAINT_a4831e9e-5b32-48bc-8be2-ceae975a3cb6" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_a4831e9e-5b32-48bc-8be2-ceae975a3cb6&quot;" type="fk" pk-ref="5" fk-ref="7"/>
+		<relation name="SYS_CONSTRAINT_6e0a9d39-eb5a-4f63-b05b-9df175620dee" fq-name="ATGE_EDW.EDW.FACT_BUDGET.&quot;SYS_CONSTRAINT_6e0a9d39-eb5a-4f63-b05b-9df175620dee&quot;" type="fk" pk-ref="6" fk-ref="7"/>
+	</relations>
+	<notes/>
+</diagram>

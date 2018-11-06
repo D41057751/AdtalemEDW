@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="snowflake_jdbc-166e406b32e-321ebf9e8ab94e1f" provider="snowflake" driver="snowflake_jdbc" name="Snowflake - ATGE_EDW" save-password="true" show-system-objects="true" show-util-objects="true" read-only="false">
+		<connection host="adtalem.us-east-1.snowflakecomputing.com" port="443" server="ADTALEM_WH_PROD" database="ATGE_EDW" url="jdbc:snowflake://adtalem.us-east-1.snowflakecomputing.com:443/?db=ATGE_EDW&amp;warehouse=ADTALEM_WH_PROD&amp;schema=EDW&amp;role=SYSADMIN" user="D41057751" password="MhQSKVVKUhNUQFV/d/c=" type="dev">
+			<provider-property name="@dbeaver-authenticator@" value="snowflake"/>
+			<provider-property name="@dbeaver-role@" value="SYSADMIN"/>
+			<provider-property name="@dbeaver-schema@" value="EDW"/>
+		</connection>
+	</data-source>
+	<filters/>
+</data-sources>
