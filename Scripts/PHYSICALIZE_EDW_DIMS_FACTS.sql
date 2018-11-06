@@ -46,7 +46,7 @@ CREATE OR REPLACE TABLE EDW.DIM_LINE_ITEM_TYPE AS
 
 ALTER TABLE EDW.DIM_LINE_ITEM_TYPE
 ADD PRIMARY KEY (LINE_ITEM_TYPE_KEY);
-
+  
 --**********************************************
 --LOAD FACTS
 --**********************************************
